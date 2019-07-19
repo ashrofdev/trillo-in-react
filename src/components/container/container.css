@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 208, 208);
+}
+input {
+    width: 40rem;
+    padding: 1rem;
+    background-color: rgb(229, 226, 226);
+    border-radius: 10rem;
+    outline: none;
+    transition: all .5s;
+}
+input:focus {
+    width: 45rem;
+}
