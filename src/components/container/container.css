@@ -1,9 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: max-content repeat(6, 1fr);
+    grid-template-rows: min-content;
+}
+
 header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     height: 7rem;
     align-items: center;
     border-bottom: 1px solid rgb(209, 208, 208);
+}
+.logo {
+    margin-left: 2rem;
 }
 input {
     width: 40rem;
@@ -24,4 +36,27 @@ input:focus {
 }
 .icons div {
     padding: 1rem;
+}
+.side-bar {
+    padding: 2rem 0;
+    width: 15rem;
+    grid-column: 1/2;
+    grid-row: 2/ 5;
+    color: #fff;
+    background-color: rgb(31, 30, 30);
+}
+.hotel-view {
+    height: 20rem;
+    grid-column: 2/-1;
+    background-color: orange;
+}
+.hotel-info {
+    grid-row: 3/4;
+    height: 50rem;
+    padding: 3rem;
+    grid-column: 2/-1;
+    background-color: green;
+}
+.cta {
+    height: 20rem;
 }
