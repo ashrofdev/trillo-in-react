@@ -98,7 +98,7 @@ input:focus {
     height: 50rem;
     padding: 3rem;
     grid-column: 2/-1;
-    background-color: green;
+    border-bottom: 1px solid #777;
 }
 .cta {
     grid-column: 2 / -1;
