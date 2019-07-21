@@ -4,7 +4,8 @@ const Cta = () => {
     return (
 
         <div className="cta">
-            {'CTA section'}
+            <h2>GOOD NEWS WE HAVE 4 ROOMS FOR YOUR SELECTED DATES</h2>
+            <button className="link">BOOK NOW</button>
         </div>
     )
 }
