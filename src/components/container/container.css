@@ -18,6 +18,9 @@ header {
 .logo {
     margin-left: 2rem;
 }
+.logo img {
+    width: 5rem;
+}
 input {
     width: 40rem;
     padding: 1rem;
@@ -74,13 +77,21 @@ input:focus {
     height: 100%;
     width: 100%;
 }
-.side-bar a {
+.side-bar button {
     z-index: 100;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #fff;
+    border: none;
 }
 .hotel-view {
     height: 20rem;
     grid-column: 2/-1;
     background-color: orange;
+    display: flex;
+}
+.hotel-view img {
+    width: 33.3%;
 }
 .hotel-info {
     grid-row: 3/4;

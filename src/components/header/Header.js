@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () =>{
     return (
         <header>
-            <div className="logo"><img src={"./logo.png"} alt=""/></div>
+            <div className="logo"><img src={ require('./logo.png') } alt=""/></div>
             <div className="search-box">
                 <input placeholder="search hotels"/>
             </div>
