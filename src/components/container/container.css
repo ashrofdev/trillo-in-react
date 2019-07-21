@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: max-content repeat(6, 1fr);
     grid-template-rows: min-content;
+    box-shadow: .3rem .3rem 2rem rgb(43, 42, 42);
 }
 
 header {
@@ -44,6 +45,37 @@ input:focus {
     grid-row: 2/ 5;
     color: #fff;
     background-color: rgb(31, 30, 30);
+}
+.side-bar ul {
+    list-style: none;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+}
+.side-bar li {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+.side-bar li::before {
+    content: '';
+    background-color: rgb(238, 36, 86);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1rem;
+    height: 0;
+    z-index: -1;
+    transition: height .5s, width .5s .5s;
+}
+.side-bar li:hover::before {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+.side-bar a {
+    z-index: 100;
 }
 .hotel-view {
     height: 20rem;
