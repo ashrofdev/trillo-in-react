@@ -96,9 +96,24 @@ input:focus {
 .hotel-info {
     grid-row: 3/4;
     height: 50rem;
-    padding: 3rem;
+    padding: 5rem;
     grid-column: 2/-1;
     border-bottom: 1px solid #777;
+    background-color: rgb(247, 243, 243);
+    display: flex;
+}
+.hotel-info .big-card {
+    background-color: #fff;
+    padding: 3rem;
+    margin-right: 5rem;
+    width: 60%;
+}
+.hotel-info .small-card {
+    background-color: #fff;
+    padding: 3rem;
+    height: 12rem;
+    width: 20rem;
+    margin-bottom: 5rem;
 }
 .cta {
     grid-column: 2 / -1;
