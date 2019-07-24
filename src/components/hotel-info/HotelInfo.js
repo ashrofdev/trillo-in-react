@@ -21,6 +21,12 @@ const HotelInfo = () => {
                     <li>We speak all languages</li>
                     <li>Perfect for families</li>
                 </ul>
+                <div className="bottom">
+                    <p>Lucy and 3 other friends recommend this hotel.</p>
+                    <figure>
+                        123
+                    </figure>
+                </div>
             </div>
             <div className="small-cards">
                 <div className="small-card">

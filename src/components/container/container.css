@@ -128,6 +128,12 @@ p {
 .hotel-info .big-card ul li {
     margin-bottom: 1rem;
 }
+.hotel-info .bottom {
+    display: flex;
+}
+.hotel-info figure {
+    align-self: flex-end;
+}
 .hotel-info .small-cards {
     display: flex;
     flex-direction: column;
