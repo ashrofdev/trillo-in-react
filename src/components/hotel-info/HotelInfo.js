@@ -23,17 +23,48 @@ const HotelInfo = () => {
                 </ul>
                 <div className="bottom">
                     <p>Lucy and 3 other friends recommend this hotel.</p>
-                    <figure>
-                        123
-                    </figure>
+                    <div className="fig">
+                        <img src={ require('./info-img/user-2.jpg') } alt=""/>
+                        <img src={ require('./info-img/user-3.jpg') } alt=""/>
+                        <img src={ require('./info-img/user-4.jpg') } alt=""/>
+                        <img src={ require('./info-img/user-5.jpg') } alt=""/>
+                    </div>
                 </div>
             </div>
             <div className="small-cards">
                 <div className="small-card">
-                    {'small card'}
+                    <p className="review">
+                    Lorem ipsum dolor sit amet,
+                     consectetur adipisicing elit. Fuga doloremque architecto 
+                     dicta animi, totam, itaque officia ex.
+                    </p>
+                    <div className="detail">
+                        <img src={ require('./info-img/user-1.jpg') } alt=""/>
+                        <div className="txt">
+                            <h3>NICK SMITH</h3>
+                            <span>FEB 27th, 2019</span>
+                        </div>
+                        <div style={{fontSize: '3rem', color: 'red'}}>
+                            7.5
+                        </div>
+                    </div>
                 </div>
                 <div className="small-card">
-                    {'small card'}
+                    <p className="review">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Fuga doloremque architecto 
+                        dicta animi, totam, itaque officia ex.
+                    </p>
+                    <div className="detail">
+                        <img src={ require('./info-img/user-6.jpg') } alt=""/>
+                        <div className="txt">
+                            <h3>MARY THOMAS</h3>
+                            <span>FEB 27th, 2019</span>
+                        </div>
+                        <div style={{fontSize: '3rem', color: 'red'}}>
+                            9.3
+                        </div>
+                    </div>
                 </div>
                 <button>Show all &rarr;</button>
             </div>

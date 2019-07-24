@@ -86,7 +86,6 @@ input:focus {
 }
 .hotel-view {
     grid-column: 2/-1;
-    background-color: orange;
     display: flex;
 }
 .hotel-view img {
@@ -96,7 +95,6 @@ input:focus {
     grid-row: 3/4;
     padding: 5rem;
     grid-column: 2/-1;
-    border-bottom: 1px solid #777;
     background-color: rgb(247, 243, 243);
     display: flex;
 }
@@ -130,9 +128,12 @@ p {
 }
 .hotel-info .bottom {
     display: flex;
+    justify-content: space-between;
 }
-.hotel-info figure {
-    align-self: flex-end;
+
+.hotel-info .fig {
+    display: flex;
+    justify-content: flex-end;
 }
 .hotel-info .small-cards {
     display: flex;
@@ -141,14 +142,53 @@ p {
 .hotel-info .small-card {
     background-color: #fff;
     padding: 3rem;
-    height: 12rem;
-    width: 20rem;
+    width: 25rem;
     margin-bottom: 5rem;
+    position: relative;
 }
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail img {
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+}
+.hotel-info .small-card .review {
+    z-index: 1000;
+    position: relative;
+}
+.fig  {
+    margin-left: 10rem;
+}
+.fig img {
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+    margin-left: -2rem;
+    border: 2px solid #fff;
+}
+.hotel-info .small-card::before {
+    content: "\201C";
+    position: absolute;
+    top: -3.2rem;
+    left: -2rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: rgb(247, 243, 243);
+    font-family: sans-serif;
+    z-index: 1;
+}
+
 .hotel-info button {
     background-color: transparent;
     color: rgb(238, 36, 69);
     border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-bottom: 1px solid currentColor;
     align-self: center;
 }
 .cta {
