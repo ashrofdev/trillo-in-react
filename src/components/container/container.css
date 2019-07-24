@@ -108,12 +108,22 @@ input:focus {
     margin-right: 5rem;
     width: 60%;
 }
+.hotel-info .small-cards {
+    display: flex;
+    flex-direction: column;
+}
 .hotel-info .small-card {
     background-color: #fff;
     padding: 3rem;
     height: 12rem;
     width: 20rem;
     margin-bottom: 5rem;
+}
+.hotel-info button {
+    background-color: transparent;
+    color: rgb(238, 36, 69);
+    border: none;
+    align-self: center;
 }
 .cta {
     grid-column: 2 / -1;
