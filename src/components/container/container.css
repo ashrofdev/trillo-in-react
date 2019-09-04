@@ -234,6 +234,9 @@ p {
     .hotel-info button {
         margin: 2rem 0;
     }
+    .cta {
+        padding-bottom: 3rem;
+    }
 
 }
 @media only screen and (max-width: 600px) {
@@ -275,9 +278,7 @@ p {
     input:focus {
         width: 13rem;
     } 
-    .cta {
-        padding-bottom: 3rem;
-    }
+    
     .cta h2 {
         font-size: 2rem;
     }
