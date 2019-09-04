@@ -131,7 +131,9 @@ p {
     display: flex;
     justify-content: space-between;
 }
-
+.bottom {
+    align-items: center;
+}
 .hotel-info .fig {
     display: flex;
     justify-content: flex-end;
@@ -166,7 +168,7 @@ p {
 }
 .fig img {
     width: 4rem;
-    height: auto;
+    height: 4rem;
     border-radius: 50%;
     margin-left: -2rem;
     border: 2px solid #fff;
@@ -229,6 +231,9 @@ p {
         width: 80%;
         margin: 1rem auto;
     }
+    .hotel-info button {
+        margin: 2rem 0;
+    }
 
 }
 @media only screen and (max-width: 600px) {
@@ -270,4 +275,10 @@ p {
     input:focus {
         width: 13rem;
     } 
+    .cta {
+        padding-bottom: 3rem;
+    }
+    .cta h2 {
+        font-size: 2rem;
+    }
 }
