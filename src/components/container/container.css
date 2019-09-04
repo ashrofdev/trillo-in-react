@@ -213,3 +213,19 @@ p {
     border-radius: 10rem;
     background-image: linear-gradient(to right bottom,  rgb(238, 36, 69), rgb(236, 61, 90))
 }
+
+@media only screen and (max-width: 1000px) {
+    .hotel-info {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .hotel-info .big-card {
+        width: 80%;
+        margin: 3rem auto;
+    }
+    .hotel-info .small-card {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
