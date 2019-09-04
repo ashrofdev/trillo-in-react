@@ -82,6 +82,7 @@ input:focus {
     background-color: transparent;
     font-size: 1.5rem;
     color: #fff;
+    outline: none;
     border: none;
 }
 .hotel-view {
@@ -228,4 +229,45 @@ p {
         width: 80%;
         margin: 1rem auto;
     }
+
+}
+@media only screen and (max-width: 600px) {
+    .hotel-info {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .hotel-info .big-card {
+        width: 80%;
+        margin: 3rem auto;
+    }
+    .hotel-info .small-card {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .side-bar {
+        grid-column: 1/-1;
+        grid-row: 2/ 3;
+        width: 100%;
+        padding: 0;
+    }
+    .side-bar ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .hotel-view {
+        grid-row: 3/4;
+        z-index: 100000;
+    }
+    .hotel-info {
+        grid-row: 4/5;
+    }
+    input {
+        width: 10rem;
+    } 
+    input:focus {
+        width: 13rem;
+    } 
 }
