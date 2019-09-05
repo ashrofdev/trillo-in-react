@@ -50,7 +50,6 @@ input:focus {
 }
 .side-bar ul {
     list-style: none;
-    margin-top: 2rem;
     font-size: 1.7rem;
 }
 .side-bar li {
@@ -240,7 +239,9 @@ li .fa {
     .cta {
         padding-bottom: 3rem;
     }
-
+    .hotel-info .bottom {
+        justify-content: space-evenly;
+    }
 }
 @media only screen and (max-width: 600px) {
     .container{
