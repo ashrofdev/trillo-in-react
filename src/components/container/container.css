@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: max-content repeat(6, 1fr);
+    grid-template-columns: 20rem repeat(6, 1fr);
     grid-template-rows: min-content;
     box-shadow: .3rem .3rem 2rem rgb(43, 42, 42);
 }
@@ -43,7 +43,6 @@ input:focus {
 }
 .side-bar {
     padding: 2rem 0;
-    width: 15rem;
     grid-column: 1/2;
     grid-row: 2/ 5;
     color: #fff;
@@ -216,6 +215,10 @@ p {
     border-radius: 10rem;
     background-image: linear-gradient(to right bottom,  rgb(238, 36, 69), rgb(236, 61, 90))
 }
+li .fa {
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+}
 
 @media only screen and (max-width: 1000px) {
     .hotel-info {
@@ -240,6 +243,9 @@ p {
 
 }
 @media only screen and (max-width: 600px) {
+    .container{
+        display: block;
+    }
     .hotel-info {
         display: block;
         margin: 0;
@@ -265,6 +271,16 @@ p {
         justify-content: space-between;
         margin: 0;
     }
+    .side-bar li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li .fa {
+        padding: 0 .5rem;
+    }
+    
     .hotel-view {
         grid-row: 3/4;
         z-index: 100000;
@@ -273,7 +289,7 @@ p {
         grid-row: 4/5;
     }
     input {
-        width: 10rem;
+        width: min-content;
     } 
     input:focus {
         width: 13rem;
@@ -281,5 +297,10 @@ p {
     
     .cta h2 {
         font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    li button {
+        display: none;
     }
 }
